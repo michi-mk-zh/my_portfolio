@@ -1,9 +1,8 @@
 'use client'
-import {Instagram} from 'lucide-react';
 import { Github } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 import { Mail } from 'lucide-react';
-import {useState} from "react";
+
 
 
 
@@ -16,18 +15,19 @@ export default function Footer() {
                 <p className='px-4 py-4  decoration-white text-white'>© {new Date().getFullYear()} Meine
                     Website. Alle Rechte vorbehalten.</p>
                 <ul className={'flex mx-4 pt-4 gap-2'}>
+
                     <li>
-                        <Instagram
-                            className="text-cc hover:text-white"/>
+                        <a href="https://github.com/michi-mk-zh/michi-mk-zh">
+                            <Github className="text-cc hover:text-white"/>
+                        </a>
                     </li>
                     <li>
-                        <Github className="text-cc hover:text-white"/>
+                        <a href="https://www.linkedin.com/in/michael-stefanoski-b2a229354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><Linkedin className="text-cc hover:text-white"/></a>
+
                     </li>
                     <li>
-                        <Linkedin className="text-cc hover:text-white"/>
-                    </li>
-                    <li>
-                        <Mail className="text-cc hover:text-white"/>
+                        <a href="mailto:stefanoski2007@gmail.com?subject=subject text"><Mail className="text-cc hover:text-white"/></a>
+
                     </li>
                 </ul>
             </div>
